@@ -1,9 +1,22 @@
-import React from 'react';
+import React from "react";
 
-const List = () => {
+const List = (props) => {
+
+  const {name,age,image} = props.person;
   return (
     <>
-      <h2>list component</h2>
+      <div className="person">
+        <img src={image} alt="" srcset="" />
+
+        <ul>
+          <li>
+            <h4>{name}</h4>
+          </li>
+          <li>
+            <p>{age} years old</p>
+          </li>
+        </ul>
+      </div>
     </>
   );
 };
