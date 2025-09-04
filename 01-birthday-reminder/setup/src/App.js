@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import data from './data';
 import List from './List';
+import Container from './Container.js'
+
+
 function App() {
-  return <h2>reminder project setup</h2>;
+
+
+  return <> 
+
+    <Container/>
+   
+    
+  </>;
 }
 
 export default App;
